@@ -1,6 +1,6 @@
 # Primer Detection Workflow
 
-This pipeline is designed to detect primer sequences from amplicon sequencing files across multiple Bioprojects using simple shell scripts. It supports both Single-End and Paired-End sequencing data. The pipeline is useful for handling large datasets from multiple Bioprojects, ensuring primer consistency across datasets, detecting variations from the stated metadata, and checking for incomplete primer removal.
+This pipeline is designed to detect primer sequences from amplicon sequencing files across multiple Bioprojects. It supports both Single-End and Paired-End sequencing data. The pipeline is useful for handling large datasets from multiple Bioprojects, ensuring primer consistency across datasets, detecting variations from the stated metadata primers, and checking for incomplete primer removal.
 
 ## Features
 - Automatically scans each `.fastq.gz` file for all possible 16S rRNA primer sequences.

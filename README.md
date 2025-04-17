@@ -20,7 +20,7 @@ This pipeline is designed to detect primer sequences from amplicon sequencing fi
 
 ### 1) Clone the repository
 ```
-git clone <repository_url>
+git clone https://github.com/Ananya1006/16SPrimerDetector.git
 ``` 
 ### 2) Navigate to the correct folder (single_end or paired_end folder)
 ``` 

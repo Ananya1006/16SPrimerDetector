@@ -12,22 +12,6 @@ Input Requirements
 1) Bioproject directories must start with PRJNA (e.g., PRJNA1, PRJNA2 and so on).
 2) The compressed fastq.gz filenames should end with "_1.fastq.gz" (forward read) and "_2.fastq.gz" (reverse read) for paired end data.
   
-Directory Structure
-16SPrimerMiner/
-├── paired_end/
-│   ├── 00_pairend_primer_detect.sh       # For Paired-End fastq.gz data
-│   ├── 01_primer_iupac.sh                # Convert detected primers to IUPAC notation
-│   ├── primers.fa                        # Contains universal 16S rRNA primer sequences in fasta format
-│   └── PRJNA1/                           # Bioproject folder(s) with **paired end** sequencing files 
-├── single_end/
-│   ├── 00_singlend_primer_detect.sh      # For Single-End fastq.gz data
-│   ├── 01_primer_iupac.sh                # Convert detected primers to IUPAC notation
-│   ├── primers.fa                        # Contains universal 16S rRNA primer sequences in fasta format
-│   └── PRJNA1/                           # Bioproject folder(s) with **single end** sequencing files 
-├── README.md
-├── LICENSE 
-
-
 Pipeline Usage 
 
 1) Navigate to the correct folder:

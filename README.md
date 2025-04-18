@@ -4,7 +4,7 @@ This pipeline is designed to detect primer sequences from amplicon sequencing fi
 
 ## Features
 - Automatically scans each `.fastq.gz` file for all possible 16S rRNA primer sequences.
-- Reports which primers are most abundant in each sample.
+- Reports which primers are most abundant in each sample, based on the 'primers.fa' file containing standard 16S rRNA primer sequences.
 - Summarizes primer occurrence across multiple Bioprojects.
 - Additionally, converts primers to IUPAC notation for flexible use in downstream bioinformatics tools.
 

@@ -4,13 +4,13 @@ This pipeline is designed to detect primer sequences from amplicon sequencing fi
 
 ## Features
 - Automatically scans each `.fastq.gz` file for all possible 16S rRNA primer sequences.
-- Reports which primers are most abundant in each sample, based on the 'primers.fa' file containing standard 16S rRNA primer sequences.
-- Summarizes primer occurrence across multiple Bioprojects.
+- Reports which primers are most abundant in each sample, based on the `primers.fa` file containing standard 16S rRNA primer sequences.
+- Summarizes primer occurrence across multiple Bioprojects (useful for meta-analysis).
 - Additionally, converts primers to IUPAC notation for flexible use in downstream bioinformatics tools.
 
 ## Input Requirements
 
-- Bioproject directory names must start with `PRJNA` (e.g., `PRJNA1`, `PRJNA2`, etc.).
+- Bioproject directory names must start with `PRJNA` (e.g., `PRJNA1`, `PRJNA1234`, etc.).
 - The compressed `.fastq.gz` filenames for Paired-End data should end with:
   - `_1.fastq.gz` (forward read) 
   - `_2.fastq.gz` (reverse read) 
@@ -22,7 +22,7 @@ This pipeline is designed to detect primer sequences from amplicon sequencing fi
 ```
 git clone https://github.com/Ananya1006/16SPrimerDetector.git
 ``` 
-### 2) Navigate to the correct folder (single_end or paired_end folder)
+### 2) Navigate to the relevant folder (single_end or paired_end folder)
 ``` 
 cd single_end
 or 
@@ -48,7 +48,7 @@ bash 01_primer_iupac.sh
 ## **Output Overview**
 Inside each Bioproject folder (PRJNAx/):
    
-- `primer_occurences.txt` — Number of reads matching each primer.
+- `primer_occurences.txt` — The occurrence count of each primer is listed and the highest count is highlighted for quick reference.
 
 - `detected_primers.txt` — Most frequent primer detected per sample (primer name e.g., 341F or 515F + IUPAC regex).
 

@@ -14,7 +14,7 @@ This pipeline is designed to detect primer sequences from amplicon sequencing fi
 - The compressed `.fastq.gz` filenames for Paired-End data should end with:
   - `_1.fastq.gz` (forward read) 
   - `_2.fastq.gz` (reverse read) 
-- For Single-End data, the files should only have one read (`.fastq.gz`).
+- For Single-End sequencing data, the files should only have one read (`.fastq.gz`).
 
 ## Pipeline Usage
 
@@ -30,7 +30,7 @@ cd paired_end
 ```
 ### 3) Make the scripts executable
 ``` 
-chmod +x .sh
+chmod +x *.sh
 ```
 ### 4) Run the scripts in order
 #### a) For Single-End data:

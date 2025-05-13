@@ -43,8 +43,6 @@ bash 01_primer_iupac.sh
 bash 00_pairend_primer_detect.sh
 bash 01_primer_iupac.sh
 ```
-## That's it! The analysis is complete.
-
 ## **Output Overview**
 Inside each Bioproject folder (PRJNAx/):
    
